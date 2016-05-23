@@ -1,5 +1,5 @@
 node {
-    git url: 'https://github.com/judoole/gradle-hello-world-java.git'
+    checkout scm
     stage 'Assemble'
     sh 'gradlew assemble --parallel'
     
