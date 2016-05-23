@@ -1,7 +1,7 @@
 node {
     stage 'Assemble'
-    sh './gradlew.sh assemble --parallel'
+    sh 'gradlew assemble --parallel'
     
     stage 'Unit-Test'
-    sh './gradlew.sh test --parallel'
+    sh 'gradlew test --parallel'
 }
