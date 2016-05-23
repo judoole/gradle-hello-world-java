@@ -9,5 +9,5 @@ node {
     
     stage 'Deploy to PROD'
     input message: 'Release to Production', ok: 'Release'
-    sh 'We deployed the app'
+    sh 'echo We deployed the app'
 }
