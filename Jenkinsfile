@@ -1,8 +1,6 @@
 pipeline{
     agent label: 'master'
-    currentBuild{
-        displayName = "${env.BRANCH_NAME} -> ${env.CHANGE_TARGET}"
-    }
+    currentBuild.displayName = "${env.BRANCH_NAME} -> ${env.CHANGE_TARGET}"
     stages{
         stage('Checkout'){
             steps{
