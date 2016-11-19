@@ -1,6 +1,6 @@
 pipeline{
     agent label: 'master'
-    currentbuild{
+    currentBuild{
         displayName = "${env.BRANCH_NAME} -> ${env.CHANGE_TARGET}"
     }
     stages{
